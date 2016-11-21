@@ -1,0 +1,144 @@
+
+/* This is in 3_layouts instead of in header because we are talking about
+ the structure of the page and not just an element or modules of elements
+ HR5.1,19:00*/
+
+.home-wrap // HR5.1,20:30
+  //display: block
+  //display: flex
+  //min-height: 100vh
+
+  //@media (max-width: 775px) //HR5.2,3:00
+  //@media (max-width: 850px)
+    display: block
+
+.home-sections //HR5.3, 10:00 ish
+  flex: 1
+  // HR5.3,7:25 This means that this will be the one to grow and shrink
+  // The sections will grow and shrink, and the header/sidebar will stay
+
+  section
+    padding: 50px 0 //padding on the (top px bottom px)
+    //overflow: hidden
+  //  Flex Classes: // will affect how those columns are displayed
+  .flex
+    display: flex
+    flex-direction: rows
+
+
+  .flex-vert
+    //display: flex
+    flex-direction: columns
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+  .align-right
+    right: 0
+
+  .order-first //makes the column be on the left
+    order: -1 //HR5.3,16:50
+    // NOTE: order works only for FLEX, when we shrink screen below 640 width
+    // it becomes block and this does not apply
+
+// columns   // These will be used to dictate size of columns
+.col-1 //pairs of columns
+  width: 320px //I edited during HR10.1
+  //max-width: 300px
+  //margin: 0 10px //margin for each of the 2 columns
+  padding: 0 10px
+  box-sizing: border-box
+
+
+.col-2
+  max-width: 620px
+  margin: 0 10px
+  box-sizing: border-box
+  width: 100% //Added HR11,20:50
+
+.col-3
+  max-width: 100%
+  padding: 0 30px
+  box-sizing: border-box
+
+//.col-right
+  position: absolute
+  right: 0
+  box-sizing: border-box
+
+
+
+.col-50 //50% of width
+  width: 50%
+  padding-left: 30px
+  //overflow: hidden
+
+.push-right //used in section-about.jade HR6.1,18:50
+  margin-left: 330px
+
+//.col-15
+  display: block
+  background: pink
+  width: 300px
+  margin: 0 10px
+
+///////////////////////////////////////////////////////////////////
+@media (max-width: 640px) //HR5.3,11:40 - when screen gets less than 640
+  .home-sections .flex //NOTE: you can add both classes in same line
+    display: block //HR5.3,12:00
+    //This changes it from flex box so when screen is squeezed
+    //it changes to two normal size blocks, top and bottom
+    //instead of two sticks, left and right
+
+  .col-1
+    width: 100%
+    p
+      margin: 0
+
+  .col-2 // I added this
+    padding-right: 20px
+
+  .col-50
+    width: auto
+    margin-top: 0
+
+  .push-right //used in section-about.jade HR6.1,23:15
+    margin-left: 10px
+
+//@media (max-width: 1100px)
+  .home-sections .flex //NOTE: you can add both classes in same line
+    display: block //HR5.3,12:00
+
+/////////////////////////////////////////////////////////////////////
+// Typography HR 6.2,16:10
+
+h2 // for the "Travis is trying to grow up,""
+  //background-color: blue
+  color: rgba(white,0.95)
+  //color: #3f3f42
+  font:
+    family: 'Bree Serif', serif
+    size: 75px
+    weight: 400
+  line-height: 1 //HR6.1,15:20
+  //margin-left: -108px //pulls out the "Travis is trying" to the left
+  padding-top: 0px
+  margin-top: 0 // default is 10, Above the "Travis is trying"
+  margin-bottom: 0
+
+.home-lead //used in section-about.jade
+  font-size: 36px
+  line-height: 1.1
+
+  &.outdented //HR6.2,9:45
+    text-indent: -0.8em //this is done for the hanging ellipses
+    //as mentioned in HR6.2,9:45
+
+@media (max-width: 640px)
+  .home-lead
+    text-align: center
+    &.outdented
+      text-indent: 0
