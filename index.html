@@ -1,0 +1,37 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+<!--This default.html is referenced in index.html (layout:default)-->
+<!--Also that entry must be on the top of the page-->
+
+<div class="home-wrap"> <!--Added HR5.1 13:25--> <!--referenced in header.sass-->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  {% include header.html %}
+
+  <div class="home-sections">
+    {% include section-about.html%}
+    {% include section-project.html%}  <!--added HR8.1,2:00-->
+    {% include section-blog.html%}  <!--added HR7.1,4:00-->
+    {% include section-footer.html%}  <!--added HR12.1,0:00-->
+
+
+
+
+
+
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="assets/js/function.js"></script>
+
+<!--At each stage-->
+<!--1. Create section-notes.jade in /_jadefiles-->
+<!--2. Include that into /index.html-->
+<!--3. Create _home-notes.sass in /assets/css/3-sections-->
+<!--4. @imported that into /assets/css/main.css-->
+
+///Design + Code My Personal Website
+// https://www.youtube.com/playlist?list=PLqGj3iMvMa4KeBN2krBtcO3U90_7SOl-A
