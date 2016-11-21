@@ -1,0 +1,26 @@
+/* The only file outside the four folders (tools,base,modules,layouts) should be the main.scss HR4.1,32:40*/
+
+/*@import "0-tools/reset";*/ /* This was done after the reset file was moved into the tools folder HR4.1,33:00*/
+/* Removed in HR4.2,3:50*/
+
+@import "0-tools/bourbon/bourbon"; /* Added in HR4.2,3:50*/
+@import "0-tools/normalize"; /* Added in HR4.2,3:50*/
+@import "0-tools/fonts"; /* Added in HR6.1,14:00*/
+
+@import "1-base/vars"; /* Added before HR4.2,8:30*/
+@import "1-base/base"; /* Added before HR4.2,8:30*/
+@import "1-base/buttons"; /* Added before HR6.2,14:05*/
+
+//@import "2-modules/header"; /* Added in HR5.1,9:00*/
+//@import "2-modules/flex-video"; /* Added in HR6.2,30:50*/
+
+@import "3-sections/header"; /* Added in HR6.1,5:00*/
+@import "3-sections/new_header"; /* Added in HR6.1,5:00*/
+@import "3-sections/home-about"; /* Added in HR6.1,5:00*/
+@import "3-sections/home-project"; /* Added in HR8.1,2:00*/
+@import "3-sections/home-blog"; /* Added in HR7.1,5:00*/
+@import "3-sections/home-footer"; /* Added in HR11,0:58*/
+
+
+
+@import "4-layouts/home"; /* Added in HR5.1,18:55*/
