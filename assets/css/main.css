@@ -530,7 +530,9 @@ body {
   text-align: center;
   padding: 0.4em 0;
   line-height: 1.25;
-  transition: all 0.15s ease; }
+  transition: all 0.15s ease;
+  border-radius: 10px;
+  font-family: 'Bree Serif', serif; }
   .home-cta:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
 
@@ -549,7 +551,7 @@ body {
     text-indent: 101%;
     white-space: nowrap;
     max-width: 135px;
-    background-image: url(/assets/img/Scale2.svg);
+    background-image: url(/assets/img/Header_Scale_white.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -641,7 +643,6 @@ body {
     display: none; } }
 
 /* Added in HR6.1,5:00*/
-/* Added in HR6.1,5:00*/
 section.about {
   background-image: url(../img/about-bg.jpg);
   background-position: center bottom;
@@ -697,7 +698,8 @@ section.project {
     width: 350px; }
     section.project .desc-wrap .home-cta {
       color: white;
-      background: #3d96cb; }
+      background: #5d06ec;
+      opacity: 0.7; }
   section.project h2 {
     color: rgba(0, 0, 0, 0.8); }
   section.project .faces {
@@ -813,7 +815,8 @@ section.blog {
     margin-bottom: 50px; }
   section.blog .home-cta {
     max-width: 300px;
-    color: #2cb4db; }
+    color: #5d06ec;
+    background: rgba(255, 255, 255, 0.9); }
   section.blog .blog-wrap {
     margin: -50px 0;
     padding-top: -50px;
@@ -860,12 +863,13 @@ section.blog {
     bottom: -240px;
     width: calc(100% - 180px);
     background-color: rgba(0, 128, 128, 0.8);
+    background-opacity: 0.5;
     padding: 40px;
     opacity: 0;
     pointer-events: none;
     float: right;
     border-left: 10px solid rgba(255, 255, 255, 0.8);
-    font-size: 36px; }
+    font-size: 30px; }
     section.blog .bubble p {
       height: calc(100% - 90px);
       overflow: hidden; }
