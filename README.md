@@ -7,7 +7,7 @@ It also used [gulp](https://github.com/gulpjs/gulp)
 
 This practice site is published on:
 
-https://hamsterguard.github.io/NeverBlog/
+https://stormpizza.github.io/NeverBlog/
 
 also in 
 
